@@ -1,0 +1,49 @@
+.sweetmania{
+    display: flex;
+    gap: 4vw;
+}
+.sweetmania .filters ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 7rem;
+}
+.sweetmania .allproducts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+.sweetmania .allproducts .prod{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+    padding-bottom: 1vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* gap: 1vw; */
+    border-radius: 10px;
+}
+.sweetmania .allproducts .prod img{
+    height: 15rem;
+    width: 15rem;
+}
+.sweetmania .allproducts .prod button{
+    width: fit-content;
+    border: none;
+    font-size: 1.4rem;
+    padding: 2%;
+    background-color: rgb(102, 11, 11);
+    cursor: pointer;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.allproducts .prod button:hover{
+    font-size: 1.5rem;
+}
+.sweetmania .allproducts .prod p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vw;
+    font-size: 1.2rem;
+}
