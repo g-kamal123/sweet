@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import classes from './styles/Specials.module.css'
 
 function Specials() {
+  const nav = useNavigate()
   return (
     <div className={classes.specials}>
         <h1>Our Specials</h1>
@@ -11,7 +13,7 @@ function Specials() {
                 <h2>Mysore Pak</h2>
                 <p>Mysore Pak is a sweet dish from the state of Karnataka, prepared especially during diwali. Besan, ghee, sugar and water mixed together to form soft pieces.</p>
                 <p className={classes.tagline}>Your daily dose of sweet is just one click away</p>
-                <button>View More</button>
+                <button onClick={()=>nav('/sweetmania')}>View More</button>
             </div>
         </div>
         <div className={classes.specialprod1}>
@@ -20,7 +22,7 @@ function Specials() {
                 <h2>Kheer Kadam</h2>
                 <p>A traditional Bengali recipe made with the enticing combination of khoya, milk, red edible colour, green cardamom powder and sugar.</p>
                 <p className={classes.tagline}>Your Sweet packet is just 30 min away from your door </p>
-                <button>View More</button>
+                <button onClick={()=>nav('/sweetmania')}>View More</button>
             </div>
         </div>
     </div>

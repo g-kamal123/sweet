@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Storage } from "./Storage";
 import classes from "./styles/ItemNavs.module.css";
 
 function ItemNavs() {
+  const detail = useContext(Storage)
   const itemarray = [
     {
       image:
         "https://mirchi.com/os/cdn/content/images/bada%20boondi%20laddu%20mm%20mithaiwala_medium_0628527.webp",
-      name: "Laddu",
+      name: "Laddoo",
     },
     {
       image:
@@ -48,10 +50,8 @@ function ItemNavs() {
     <div className={classes.itemnavs}>
       {itemarray.map((item) => (
         <div className={classes.item}>
-          <img src={item.image} alt="" />
-          <select>
-            <option>{item.name}</option>
-          </select>
+          <img src={item.image} alt="" onClick={()=>detail.itemnav(item.name)}/>
+            <span>{item.name}</span>
         </div>
       ))}
     </div>

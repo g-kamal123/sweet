@@ -11,10 +11,11 @@
     border-radius: 50%;
     cursor: pointer;
 }
-.itemnavs .item select{
-    border: none;
-    background-color: whitesmoke;
+.itemnavs .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.itemnavs .item select:focus{
+/* .itemnavs .item select:focus{
     outline: 0;
-}
+} */

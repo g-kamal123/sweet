@@ -13,27 +13,24 @@
     width: 8rem;
     cursor: pointer;
 }
-.navbar .srch{
+.srch{
     display: flex;
     gap: 2vw;
 }
-.navbar .srch ul{
+.srch ul{
     list-style: none;
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     gap: 1rem;
     /* width: 25rem; */
 }
-.navbar .srchicon{
-    border: 2px solid black;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    height: fit-content;
-    width: max-content;
-    background-color: rgb(192, 172, 133);
-    padding: 1% 2%;
+.srch ul li{
+    font-size: 1.7vw;
+}
+.srchicon{
+    
 }
 .act{
     display: none;
@@ -43,8 +40,8 @@
 }
 .srchicon input{
     border: none;
-    background-color: rgb(192, 172, 133);
-    font-size: 1.4rem;
+    /* background-color: rgb(192, 172, 133); */
+    /* font-size: 1.4rem; */
     max-width: 5rem;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -53,24 +50,22 @@
     outline: 0;
 }
 .srchicon i{
-    background-color: rgb(192, 172, 133);
-    font-size: 1rem;
-    border-right: 1px solid black;
+    /* background-color: rgb(192, 172, 133); */
+    font-size: 2.9vw;
+    /* border-right: 1px solid black; */
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     min-height: 1.7rem;
     /* padding-left: 5%; */
     padding-top: 5%;
     padding-right: 5%;
+    cursor: pointer;
 }
 .active{
     display: block;
-    background-color: whitesmoke;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
-    padding: 2vw 0;
 }
 .active input{
-    width: 85vw;
+    width: 25vw;
     font-size: 1.4rem;
     padding: 1%;
     border-radius: 20px;
@@ -89,14 +84,23 @@
 }
 @keyframes searching{
     0% {max-width: 2vw;}
-    10% {max-width: 10vw;}
-    20% {max-width: 20vw;}
-    30% {max-width: 25vw;}
-    40% {max-width: 30vw;}
-    50% {max-width: 40vw;}
-    60% {max-width: 48vw;}
-    70% {max-width: 55vw;}
-    80% {max-width: 65vw;}
-    90% {max-width: 78vw;}
-    100% {max-width: 85vw;}
+    10% {max-width: 4vw;}
+    20% {max-width: 5vw;}
+    30% {max-width: 6vw;}
+    40% {max-width: 7vw;}
+    50% {max-width: 8vw;}
+    60% {max-width: 9vw;}
+    70% {max-width: 10vw;}
+    80% {max-width: 11vw;}
+    90% {max-width: 12vw;}
+    100% {max-width: 13vw;}
+}
+.navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+@media (max-width:760px){
+    .srchicon i{
+        margin-top: 2vh;
+    }
 }
