@@ -5,9 +5,18 @@
 }
 .sweetmania .filtercontent{
     position: sticky;
-    min-width: 7rem;
-    max-width: 7rem;
+    min-width: 8rem;
+    max-width: 8rem;
     top: 10%;
+}
+.sweetmania .filtercontent{
+    padding-left: 0.5rem;
+}
+.sweetmania .filtercontent input,label{
+    cursor: pointer;
+}
+.sweetmania .filters ul li{
+    margin-bottom: 0.8rem;
 }
 .sweetmania .filters ul{
     list-style: none;
@@ -181,6 +190,8 @@
     border: 1.5px solid brown;
     text-transform: capitalize;
     border-radius: 5px;
+    width: fit-content;
+    min-width: 15rem;
 
 }
 .modal .content .textcontent button:hover{

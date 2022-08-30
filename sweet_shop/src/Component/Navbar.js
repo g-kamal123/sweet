@@ -23,7 +23,7 @@ function Navbar() {
     </div>
         <ul>
             <li onClick={()=>detail.showsearch()}>
-              <NavLink to='/sweetmania'>Sweetmania</NavLink>
+              <NavLink to='/sweetmania'>Store</NavLink>
             </li>
             <li><NavLink to='/cart'>Cart({detail.cartarr.length})</NavLink></li>
         </ul>

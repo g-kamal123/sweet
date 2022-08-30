@@ -41,23 +41,23 @@ function Sweetmainia() {
           <ul>
           <li>
               <input type="checkbox" id="all" onChange={filters} />
-              <span>All</span>
+              <label htmlFor="all">All</label>
             </li>
             <li>
               <input type="checkbox" id="bfst" onChange={filters} />
-              <span>BreakFast</span>
+              <label htmlFor="bfst">BreakFast</label>
             </li>
             <li>
               <input type="checkbox" id="birth" onChange={filters} />
-              <span>Birthday</span>
+              <label htmlFor="birth">Birthday</label>
             </li>
             <li>
               <input type="checkbox" id="sweet" onChange={filters} />
-              <span>Sweets</span>
+              <label htmlFor="sweet">Sweets</label>
             </li>
             <li>
               <input type="checkbox" id="kulfi" onChange={filters} />
-              <span>Other</span>
+              <label htmlFor="kulfi">Other</label>
             </li>
           </ul>
           <h2>Price</h2>
@@ -68,7 +68,9 @@ function Sweetmainia() {
             value="0"
             onClick={(event) => detail.orderfilter(event.target.value)}
           />
-          <label>Low to high</label>
+          <label htmlFor="inc">Low to high</label>
+          <br />
+          <br />
           <input
             type="radio"
             name="order"
@@ -76,8 +78,8 @@ function Sweetmainia() {
             id="dec"
             onClick={(event) => detail.orderfilter(event.target.value)}
           />
-          <label>Hight to low</label>
-          <h2>Range</h2>
+          <label htmlFor="dec">Hight to low</label>
+          <h3>Price Range</h3>
           <select
             onChange={(event) => {
               setMin(event.target.value);
@@ -126,7 +128,7 @@ function Sweetmainia() {
         </div>
       </div>
       <div className={classes.allproducts}>
-        {detail.alldata &&
+        {detail.alldata.length===0 ? <h1>No product to show</h1> :
           detail.alldata.map((item) => (
             <div className={classes.prod} onClick={()=>{setModalItem(item)
               setModal(true)}}>

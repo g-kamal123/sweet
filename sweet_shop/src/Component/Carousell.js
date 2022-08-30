@@ -7,9 +7,9 @@ import { useNavigate } from "react-router-dom";
 function Carousell() {
   const nav = useNavigate()
   const arr = {
-    img1: "unnamed.jpg",
-    img2: "https://thumbs.dreamstime.com/b/confectionary-shop-display-background-sweet-treats-variety-sma-small-business-concept-horizontal-banner-format-warm-white-balance-91148679.jpg",
-    img3: "https://english.onlinekhabar.com/wp-content/uploads/2022/01/DSC_2664-1024x681.jpg",
+    img1: "https://mirchi.com/os/cdn/content/images/Sweets_mobile_273039.jpg",
+    img2: "https://assets.limetray.com/assets/image_manager/uploads/7196/Banner-1-sweets-23.jpg",
+    img3: "https://foodypoint.in/wp-content/uploads/2018/01/Sweets-Banner.jpg",
   };
   return (
     <Carousel autoPlay={true} showThumbs={false} showIndicators={false} infiniteLoop={true}>

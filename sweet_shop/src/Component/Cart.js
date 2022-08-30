@@ -195,7 +195,7 @@ function Cart() {
       <Modal open={delmodal} onClose={()=>setdelmodal(false)}>
       <div  className={`${classes.emptyCart} ${classes.chkmodal}`}>
           <h2>Do you want to delete?</h2>
-          <div style={{display:'flex',gap:'1rem'}}>
+          <div style={{display:'flex',gap:'1rem',justifyContent:'space-around'}}>
           <button onClick={()=>{details.deleteCartItem(delitem)
           setdelmodal(false)}}>Delete</button>
           <button onClick={() => setdelmodal(false)}>Cancel</button>

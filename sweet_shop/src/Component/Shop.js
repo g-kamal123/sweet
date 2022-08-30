@@ -29,7 +29,7 @@ function Shop() {
             padding: "2rem 1rem",
           }}>
             <h1 onClick={()=>setModal(false)} style={{textAlign:'right',cursor:'pointer',fontSize:'1.8rem',margin:'0',padding:'0'}}>&times;</h1>
-            <img src='https://d168jcr2cillca.cloudfront.net/uploadimages/coupons/10155-SweetKhana_640x320_Banner.jpg' alt=''/>
+            <img src='https://d168jcr2cillca.cloudfront.net/uploadimages/coupons/10155-SweetKhana_640x320_Banner.jpg' alt='' style={{height:'95%',width:'95%'}}/>
             
           </div>
         </Modal>

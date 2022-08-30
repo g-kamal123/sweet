@@ -220,16 +220,7 @@
       "price": 780
     }
   ],
-  "cart": [
-    {
-      "id": "31966b86-51c1-4a9e-be01-53cd2dd234c0",
-      "prodId": "1",
-      "name": "motichur",
-      "image": "https://cdn.shopify.com/s/files/1/0592/0342/0346/products/1.Motichurladdu.jpg?v=1629656702",
-      "price": 160,
-      "quantity": 1
-    }
-  ],
+  "cart": [],
   "customers": [
     {
       "id": "a2b03890-6505-4795-b203-73f4b6dcbdaa",
